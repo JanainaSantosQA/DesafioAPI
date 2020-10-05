@@ -1,0 +1,17 @@
+{
+  "id": "$projectId",
+  "name": "$projectName",
+  "status": {
+    "id": "$projectStatusId",
+    "name": "$statusName",
+    "label": "$statusLabel"
+  },
+  "description": "$description",
+  "enabled": "$enabled",
+  "file_path": "$filePath",
+  "view_state": {
+    "id": "$viewStateId",
+    "name": "$viewStateName",
+    "label": "$viewStateLabel"
+  }
+}

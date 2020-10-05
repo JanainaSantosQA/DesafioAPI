@@ -1,0 +1,7 @@
+﻿{
+  "name": "$versionName",
+  "description": "$versionDescription",
+  "released": "$versionReleased",
+  "obsolete": "$versionObsolete",
+  "timestamp": "$timestamp"
+}

@@ -1,0 +1,9 @@
+{
+  "username": "$username",
+  "password": "$password",
+  "real_name": "$realName",
+  "email": "$email",
+  "access_level": { "name": "$acessLevelName" },
+  "enabled": "$enabled",
+  "protected": "$protected"
+}

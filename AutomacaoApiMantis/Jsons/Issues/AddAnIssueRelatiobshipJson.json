@@ -1,0 +1,8 @@
+﻿{
+  "issue": {
+    "id": "$bugId"
+  },
+  "type": {
+    "name": "$typeName"
+  }
+}

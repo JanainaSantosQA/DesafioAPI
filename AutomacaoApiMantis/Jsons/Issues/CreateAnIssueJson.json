@@ -1,0 +1,44 @@
+﻿{
+  "summary": "$summary",
+  "description": "$description",
+  "additional_information": "$additionalInformation",
+  "project": {
+    "id": "$projectId",
+    "name": "$projectName"
+  },
+  "category": {
+    "id": 5,
+    "name": "bugtracker"
+  },
+  "handler": {
+    "name": "vboctor"
+  },
+  "view_state": {
+    "id": 10,
+    "name": "public"
+  },
+  "priority": {
+    "name": "normal"
+  },
+  "severity": {
+    "name": "trivial"
+  },
+  "reproducibility": {
+    "name": "always"
+  },
+  "sticky": false,
+  "custom_fields": [
+    {
+      "field": {
+        "id": 4,
+        "name": ""
+      },
+      "value": "Seattle"
+    }
+  ],
+  "tags": [
+    {
+      "name": "$tagName"
+    }
+  ]
+}
