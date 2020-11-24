@@ -1,6 +1,7 @@
 ﻿using RestSharp;
 using NUnit.Framework;
 using AutomacaoApiMantis.Bases;
+using AutomacaoApiMantis.Helpers;
 using System.Text.RegularExpressions;
 using AutomacaoApiMantis.DBSteps.Issues;
 using AutomacaoApiMantis.Requests.Issues;
@@ -42,16 +43,15 @@ namespace AutomacaoApiMantis.Tests.Issues
 
             var consultaNotaBugDB = issuesDBSteps.ConsultaNotaBugDB(bugCriadoDB.BugId, note);
 
-            Assert.Multiple(() =>
-            {
-                Assert.AreEqual(statusCodeExpected, response.StatusCode.ToString(), "O StatusCode retornado não é o esperado.");
-                Assert.IsNull(consultaNotaBugDB, "O registro da nota não foi excluído.");
-            });
+            GeneralHelpers.ValidaStatusCodeComComandoNodeJS(statusCodeExpected, response.StatusCode.ToString());
+
+            Assert.IsNull(consultaNotaBugDB, "O registro da nota não foi excluído.");
 
             projectsDBSteps.DeletaProjetoDB(projetoCriadoDB.ProjectId);
             issuesDBSteps.DeletaBugDB(bugCriadoDB.BugId);
             issuesDBSteps.DeletaTextoBugDB(bugCriadoDB.BugId);
             issuesDBSteps.DeletaTextoNotaBugDB(bugNoteId, note);
+            issuesDBSteps.DeletaHistoricoBugDB(bugCriadoDB.BugId);
         }
 
         [Test]
@@ -70,14 +70,14 @@ namespace AutomacaoApiMantis.Tests.Issues
             #region Parameters
             string bugNoteId = "99999";
 
-            //Resultado Esperadp
+            //Resultado Esperado
             string statusCodeExpected = "NotFound";
             #endregion
 
             DeleteAnIssueNoteRequest deleteAnIssueNoteRequest = new DeleteAnIssueNoteRequest(bugCriadoDB.BugId.ToString(), bugNoteId);
             IRestResponse<dynamic> response = deleteAnIssueNoteRequest.ExecuteRequest();
 
-            Assert.AreEqual(statusCodeExpected, response.StatusCode.ToString(), "O StatusCode retornado não é o esperado.");
+            GeneralHelpers.ValidaStatusCodeComComandoNodeJS(statusCodeExpected, response.StatusCode.ToString());
 
             string[] arrayRegex = new string[]
 
@@ -121,7 +121,7 @@ namespace AutomacaoApiMantis.Tests.Issues
             DeleteAnIssueNoteRequest deleteAnIssueNoteRequest = new DeleteAnIssueNoteRequest(bugCriadoDB.BugId.ToString(), bugNoteId);
             IRestResponse<dynamic> response = deleteAnIssueNoteRequest.ExecuteRequest();
 
-            Assert.AreEqual(statusCodeExpected, response.StatusCode.ToString(), "O StatusCode retornado não é o esperado.");
+            GeneralHelpers.ValidaStatusCodeComComandoNodeJS(statusCodeExpected, response.StatusCode.ToString());
 
             string[] arrayRegex = new string[]
 
@@ -172,11 +172,9 @@ namespace AutomacaoApiMantis.Tests.Issues
 
             var consultaNotaBugDB = issuesDBSteps.ConsultaNotaBugDB(bugCriadoDB.BugId, note);
 
-            Assert.Multiple(() =>
-            {
-                Assert.AreEqual(statusCodeExpected, response.StatusCode.ToString(), "O StatusCode retornado não é o esperado.");
-                Assert.IsNotNull(consultaNotaBugDB, "O registro da nota foi excluído.");
-            });
+            GeneralHelpers.ValidaStatusCodeComComandoNodeJS(statusCodeExpected, response.StatusCode.ToString());
+
+            Assert.IsNotNull(consultaNotaBugDB, "O registro da nota foi excluído.");
 
             string[] arrayRegex = new string[]
 
@@ -196,6 +194,7 @@ namespace AutomacaoApiMantis.Tests.Issues
             issuesDBSteps.DeletaBugDB(bugCriadoDB.BugId);
             issuesDBSteps.DeletaTextoBugDB(bugCriadoDB.BugId);
             issuesDBSteps.DeletaTextoNotaBugDB(bugNoteId, note);
+            issuesDBSteps.DeletaNotaBugDB(bugCriadoDB.BugId, consultaNotaBugDB[0]);
         }
     }
 }

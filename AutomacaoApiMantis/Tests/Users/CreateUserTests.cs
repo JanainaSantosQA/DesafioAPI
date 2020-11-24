@@ -5,8 +5,6 @@ using AutomacaoApiMantis.Helpers;
 using AutomacaoApiMantis.Steps.Users;
 using AutomacaoApiMantis.DBSteps.Users;
 
-[assembly: LevelOfParallelism(2)]
-
 namespace AutomacaoApiMantis.Tests.Users
 {
     [TestFixture]

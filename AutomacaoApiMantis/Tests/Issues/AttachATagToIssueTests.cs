@@ -7,6 +7,7 @@ using AutomacaoApiMantis.DBSteps.Projects;
 
 namespace AutomacaoApiMantis.Tests.Issues
 {
+    [TestFixture]
     public class AttachATagToIssueTests : TestBase
     {
         ProjectsDBSteps projectsDBSteps = new ProjectsDBSteps();

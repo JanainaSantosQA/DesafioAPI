@@ -71,12 +71,21 @@ namespace AutomacaoApiMantis.DBSteps.Issues
 
             DBHelpers.ExecuteQuery(query);
         }
-        public void DeletaNotaBugDB(int bugId, string bugNoteTextId)
+        public void DeletaNotaBugDB(int bugId, string bugNoteId)
         {
             string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/Issues/deletaNotaBug.sql", Encoding.UTF8);
-            query = query.Replace("$bugId", bugId.ToString()).Replace("$bugNoteTextId", bugNoteTextId);
+            query = query.Replace("$bugId", bugId.ToString()).Replace("$bugNoteId", bugNoteId);
 
-            ExtentReportHelpers.AddTestInfo(2, "PARAMETERS: ID do bug = " + bugId + " ID do texto da nota bug = " + bugNoteTextId);
+            ExtentReportHelpers.AddTestInfo(2, "PARAMETERS: ID do bug = " + bugId + " ID da nota bug = " + bugNoteId);
+
+            DBHelpers.ExecuteQuery(query);
+        }
+        public void DeletaHistoricoBugDB(int bugId)
+        {
+            string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/Issues/deletaHistoricoBug.sql", Encoding.UTF8);
+            query = query.Replace("$bugId", bugId.ToString());
+
+            ExtentReportHelpers.AddTestInfo(2, "PARAMETERS: ID do bug = " + bugId);
 
             DBHelpers.ExecuteQuery(query);
         }

@@ -1,0 +1,2986 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Extent Framework</title>
+  <link rel="apple-touch-icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+  <link href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/cd00a5e/spark/css/style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+
+
+<body class="test-view  dark">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">AutomacaoApiMantis</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">23/11/2020 20:37:58</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row">
+                        <div class="test-list">
+                            <div class="test-list-tools">
+                                <ul class="tools pull-left">
+                                    <li>
+                                        <a href="">
+                                            <span class="font-size-14">Tests</span>
+                                        </a>
+                                    </li> 
+                                </ul>
+                                <ul class="tools text-right">
+									<li class="user-profile dropdown dropdown-animated scale-left">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-exclamation-circle"></i>
+										</a>
+										<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																																																		<div class="dropdown-divider"></div>
+											<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+										</ul>
+									</li>
+																		<li class="user-profile dropdown dropdown-animated scale-left">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											<i class="fa fa-tag"></i>
+										</a>
+										<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+												<a class="dropdown-item" href="#">Issues.AddAnIssueRelatiobshipTests</a>
+												<a class="dropdown-item" href="#">Issues.AttachATagToIssueTests</a>
+												<a class="dropdown-item" href="#">Issues.CreateAnIssueTests</a>
+												<a class="dropdown-item" href="#">Issues.DeleteAnIssueNoteTests</a>
+												<a class="dropdown-item" href="#">Issues.DeleteAnIssueTests</a>
+										</ul>
+                                    </li>
+									                                </ul>
+                            </div>
+                            <div class="test-list-wrapper scrollable">
+                                <ul class="test-list-item">
+										<li class="test-item" status="pass" author="" device="" tag="Issues.AddAnIssueRelatiobshipTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AdicionandoRelacionamentoIdBugInexistente</p> 
+													<p class="duration text-sm">0h:0m:0s+573ms</p> 
+													<span class="datetime">20:37:58 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AdicionandoRelacionamentoIdBugInexistente</h5>
+															<span class='badge badge-success'>23/11/2020 20:37:58</span>
+															<span class='badge badge-danger'>23/11/2020 20:37:59</span>
+															<span class='badge badge-default'>0h:0m:0s+573ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.AddAnIssueRelatiobshipTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/999999/relationships/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "issue": {
+    "id": "999999"
+  },
+  "type": {
+    "name": "related-to"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:37:58 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=9b9913fa0d3c313a95bcf711deead468; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=87
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Issue #999999 not found",
+    "code": 1100,
+    "localized": "Issue 999999 not found."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:37:59</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.AddAnIssueRelatiobshipTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">AdicionarRelacionamentoNaoInformandoTipo</p> 
+													<p class="duration text-sm">0h:0m:0s+218ms</p> 
+													<span class="datetime">20:37:59 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">AdicionarRelacionamentoNaoInformandoTipo</h5>
+															<span class='badge badge-success'>23/11/2020 20:37:59</span>
+															<span class='badge badge-danger'>23/11/2020 20:37:59</span>
+															<span class='badge badge-default'>0h:0m:0s+218ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.AddAnIssueRelatiobshipTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/999999/relationships/</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "issue": {
+    "id": "999999"
+  },
+  "type": {
+    "name": ""
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:37:59 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=f91148bd545cf044c14794197c185a1c; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=104
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:37:59</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Unknown relationship type ''",
+    "code": 29,
+    "localized": "Invalid value for 'relationship_type'"
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:37:59</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.AttachATagToIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">InserindoUmaNotaNoBug</p> 
+													<p class="duration text-sm">0h:0m:0s+728ms</p> 
+													<span class="datetime">20:38:05 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">InserindoUmaNotaNoBug</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:05</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:06</span>
+															<span class='badge badge-default'>0h:0m:0s+728ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.AttachATagToIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:05</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = InserindoUmaNotaNoBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:05</td>
+				<td>
+InseriBugDB || PARAMETERS: ID do projeto = 1208 Resumo = InserindoUmaNotaNoBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:05</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:05</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/384/notes</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:05</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:05</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "text": "InserindoUmaNotaNoBug",
+  "view_state": {
+    "name": "public"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:05</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:05</td>
+				<td>
+<pre><b>STATUS CODE: </b>201 - Created</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:05</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:05 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=cb58f1df1a8cd9131961097e8c9b7546; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=1438
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:05</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "note": {
+        "id": 120,
+        "reporter": {
+            "id": 1,
+            "name": "administrator",
+            "email": "root@localhost"
+        },
+        "text": "InserindoUmaNotaNoBug",
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "type": "note",
+        "created_at": "2020-11-24T07:38:05+08:00",
+        "updated_at": "2020-11-24T07:38:05+08:00"
+    },
+    "issue": {
+        "id": 384,
+        "summary": "InserindoUmaNotaNoBug",
+        "description": "Description for sample REST issue.",
+        "steps_to_reproduce": "teste",
+        "additional_information": "More info about the issue",
+        "project": {
+            "id": 1208,
+            "name": "InserindoUmaNotaNoBug"
+        },
+        "category": {
+            "id": 1,
+            "name": "General"
+        },
+        "reporter": {
+            "id": 0
+        },
+        "status": {
+            "id": 10,
+            "name": "new",
+            "label": "new",
+            "color": "#fcbdbd"
+        },
+        "resolution": {
+            "id": 10,
+            "name": "open",
+            "label": "open"
+        },
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "priority": {
+            "id": 30,
+            "name": "normal",
+            "label": "normal"
+        },
+        "severity": {
+            "id": 50,
+            "name": "minor",
+            "label": "minor"
+        },
+        "reproducibility": {
+            "id": 10,
+            "name": "always",
+            "label": "always"
+        },
+        "sticky": false,
+        "updated_at": "2020-11-24T07:38:05+08:00",
+        "notes": [
+            {
+                "id": 120,
+                "reporter": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "text": "InserindoUmaNotaNoBug",
+                "view_state": {
+                    "id": 10,
+                    "name": "public",
+                    "label": "public"
+                },
+                "type": "note",
+                "created_at": "2020-11-24T07:38:05+08:00",
+                "updated_at": "2020-11-24T07:38:05+08:00"
+            }
+        ],
+        "history": [
+            {
+                "created_at": "2020-11-24T07:38:05+08:00",
+                "user": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "type": {
+                    "id": 2,
+                    "name": "note-added"
+                },
+                "note": {
+                    "id": 120
+                },
+                "message": "Note Added: 0000120"
+            }
+        ]
+    }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:05</td>
+				<td>
+ConsultaNotaBugDB || PARAMETERS: ID do bug = 384 Descrição da nota = InserindoUmaNotaNoBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1208									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+DeletaBugDB || PARAMETERS: ID do bug = 384									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+DeletaTextoBugDB || PARAMETERS: ID do bug = 384									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+DeletaTextoNotaBugDB || PARAMETERS: ID da nota = 120 Descrição da nota = InserindoUmaNotaNoBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+DeletaNotaBugDB || PARAMETERS: ID do bug = 384 ID da nota bug = 120									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.AttachATagToIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">InserindoUmaNotaNoBugIdBugInexistente</p> 
+													<p class="duration text-sm">0h:0m:0s+203ms</p> 
+													<span class="datetime">20:38:06 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">InserindoUmaNotaNoBugIdBugInexistente</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:06</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:06</span>
+															<span class='badge badge-default'>0h:0m:0s+203ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.AttachATagToIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/99999/notes</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "text": "InserindoUmaNotaNoBugIdBugInexistente",
+  "view_state": {
+    "name": "public"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:06 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=885eda7cb2456bb2fd2a47b1597196ad; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=85
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Issue #99999 not found",
+    "code": 1100,
+    "localized": "Issue 99999 not found."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.AttachATagToIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">InserindoUmaNotaNoBugIdBugInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+176ms</p> 
+													<span class="datetime">20:38:06 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">InserindoUmaNotaNoBugIdBugInvalido</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:06</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:06</span>
+															<span class='badge badge-default'>0h:0m:0s+176ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.AttachATagToIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/test/notes</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "text": "InserindoUmaNotaNoBugIdBugInvalido",
+  "view_state": {
+    "name": "public"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:06 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=e30a9c4a889c43d1cc75d01fa60d2e45; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=93
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "'issue_id' must be numeric",
+    "code": 29,
+    "localized": "Invalid value for 'issue_id'"
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.AttachATagToIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">InserindoUmaNotaNoBugSemInformarOTexto</p> 
+													<p class="duration text-sm">0h:0m:0s+297ms</p> 
+													<span class="datetime">20:38:06 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">InserindoUmaNotaNoBugSemInformarOTexto</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:06</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:06</span>
+															<span class='badge badge-default'>0h:0m:0s+297ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.AttachATagToIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = InserindoUmaNotaNoBugSemInformarOTexto									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+InseriBugDB || PARAMETERS: ID do projeto = 1209 Resumo = InserindoUmaNotaNoBugSemInformarOTexto									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/385/notes</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "text": "",
+  "view_state": {
+    "name": "public"
+  }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:06 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=2535b1f4bc2b1cc4a820f28ae8f69efb; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=129
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:06</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Issue note not specified.",
+    "code": 11,
+    "localized": "A necessary field \"Note\" was empty. Please recheck your inputs."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+ConsultaNotaBugDB || PARAMETERS: ID do bug = 385 Descrição da nota =									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1209									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+DeletaBugDB || PARAMETERS: ID do bug = 385									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+DeletaTextoBugDB || PARAMETERS: ID do bug = 385									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.CreateAnIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CriandoUmBug</p> 
+													<p class="duration text-sm">0h:0m:0s+435ms</p> 
+													<span class="datetime">20:38:06 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CriandoUmBug</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:06</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:07</span>
+															<span class='badge badge-default'>0h:0m:0s+435ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.CreateAnIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:06</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = CriandoUmBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "summary": "CriandoUmBug",
+  "description": "Description for sample REST issue.",
+  "additional_information": "More info about the issue",
+  "project": {
+    "id": "1210",
+    "name": "CriandoUmBug"
+  },
+  "category": {
+    "id": 5,
+    "name": "bugtracker"
+  },
+  "handler": {
+    "name": "vboctor"
+  },
+  "view_state": {
+    "id": 10,
+    "name": "public"
+  },
+  "priority": {
+    "name": "normal"
+  },
+  "severity": {
+    "name": "trivial"
+  },
+  "reproducibility": {
+    "name": "always"
+  },
+  "sticky": false,
+  "custom_fields": [
+    {
+      "field": {
+        "id": 4,
+        "name": ""
+      },
+      "value": "Seattle"
+    }
+  ],
+  "tags": [
+    {
+      "name": "mantishub"
+    }
+  ]
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:06 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=b758922a4e4cc95b7f39c38fb3656b1a; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Type=text/html; charset=UTF-8</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+<br />
+<b>Fatal error</b>:   1300 in <b>/var/www/html/core/custom_field_api.php</b> on line <b>392</b><br />
+</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+ConsultaBugDB || PARAMETERS: ID do projeto = 1210 Resumo = CriandoUmBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1210									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+DeletaBugDB || PARAMETERS: ID do bug = 386									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.CreateAnIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CriandoUmBugDescricaoEmBranco</p> 
+													<p class="duration text-sm">0h:0m:0s+262ms</p> 
+													<span class="datetime">20:38:07 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CriandoUmBugDescricaoEmBranco</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:07</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:07</span>
+															<span class='badge badge-default'>0h:0m:0s+262ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.CreateAnIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = CriandoUmBugDescricaoEmBranco									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "summary": "CriandoUmProblemaDescricaoEmBranco",
+  "description": "",
+  "additional_information": "More info about the issue",
+  "project": {
+    "id": "1211",
+    "name": "CriandoUmBugDescricaoEmBranco"
+  },
+  "category": {
+    "id": 5,
+    "name": "bugtracker"
+  },
+  "handler": {
+    "name": "vboctor"
+  },
+  "view_state": {
+    "id": 10,
+    "name": "public"
+  },
+  "priority": {
+    "name": "normal"
+  },
+  "severity": {
+    "name": "trivial"
+  },
+  "reproducibility": {
+    "name": "always"
+  },
+  "sticky": false,
+  "custom_fields": [
+    {
+      "field": {
+        "id": 4,
+        "name": ""
+      },
+      "value": "Seattle"
+    }
+  ],
+  "tags": [
+    {
+      "name": "mantishub"
+    }
+  ]
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:07 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=24eb03b0af1db85e18b1d04125fc2860; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=136
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Description not specified",
+    "code": 11,
+    "localized": "A necessary field \"description\" was empty. Please recheck your inputs."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+ConsultaBugDB || PARAMETERS: ID do projeto = 1211 Resumo = CriandoUmProblemaDescricaoEmBranco									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1211									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.CreateAnIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CriandoUmBugInformandoProjetoInexistente</p> 
+													<p class="duration text-sm">0h:0m:0s+191ms</p> 
+													<span class="datetime">20:38:07 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CriandoUmBugInformandoProjetoInexistente</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:07</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:07</span>
+															<span class='badge badge-default'>0h:0m:0s+191ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.CreateAnIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "summary": "CriandoUmBugInformandoProjetoInexistente",
+  "description": "Description for sample REST issue.",
+  "additional_information": "More info about the issue",
+  "project": {
+    "id": "999999",
+    "name": "CriandoUmBugInformandoProjetoInexistente"
+  },
+  "category": {
+    "id": 5,
+    "name": "bugtracker"
+  },
+  "handler": {
+    "name": "vboctor"
+  },
+  "view_state": {
+    "id": 10,
+    "name": "public"
+  },
+  "priority": {
+    "name": "normal"
+  },
+  "severity": {
+    "name": "trivial"
+  },
+  "reproducibility": {
+    "name": "always"
+  },
+  "sticky": false,
+  "custom_fields": [
+    {
+      "field": {
+        "id": 4,
+        "name": ""
+      },
+      "value": "Seattle"
+    }
+  ],
+  "tags": [
+    {
+      "name": "mantishub"
+    }
+  ]
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:07 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=fa0c434f1231ee40604fc77a8742dd70; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=95
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Project '999999' not found",
+    "code": 700,
+    "localized": "Project \"999999\" not found."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+ConsultaBugDB || PARAMETERS: ID do projeto = 999999 Resumo = CriandoUmBugInformandoProjetoInexistente									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.CreateAnIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CriandoUmBugNomeTagEmBranco</p> 
+													<p class="duration text-sm">0h:0m:0s+221ms</p> 
+													<span class="datetime">20:38:07 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CriandoUmBugNomeTagEmBranco</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:07</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:07</span>
+															<span class='badge badge-default'>0h:0m:0s+221ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.CreateAnIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = CriandoUmBugNomeTagEmBranco									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "summary": "CriandoUmBugNomeTagEmBranco",
+  "description": "Description for sample REST issue.",
+  "additional_information": "More info about the issue",
+  "project": {
+    "id": "1212",
+    "name": "CriandoUmBugNomeTagEmBranco"
+  },
+  "category": {
+    "id": 5,
+    "name": "bugtracker"
+  },
+  "handler": {
+    "name": "vboctor"
+  },
+  "view_state": {
+    "id": 10,
+    "name": "public"
+  },
+  "priority": {
+    "name": "normal"
+  },
+  "severity": {
+    "name": "trivial"
+  },
+  "reproducibility": {
+    "name": "always"
+  },
+  "sticky": false,
+  "custom_fields": [
+    {
+      "field": {
+        "id": 4,
+        "name": ""
+      },
+      "value": "Seattle"
+    }
+  ],
+  "tags": [
+    {
+      "name": ""
+    }
+  ]
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:07 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=b223e611453043568e33d6b683258b72; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=91
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:07</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Tag name '' is not valid.",
+    "code": 2202,
+    "localized": "Tag name \"\" is invalid."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+ConsultaBugDB || PARAMETERS: ID do projeto = 1212 Resumo = CriandoUmBugNomeTagEmBranco									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1212									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.CreateAnIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">CriandoUmBugSumarioEmBranco</p> 
+													<p class="duration text-sm">0h:0m:0s+235ms</p> 
+													<span class="datetime">20:38:07 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">CriandoUmBugSumarioEmBranco</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:07</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:08</span>
+															<span class='badge badge-default'>0h:0m:0s+235ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.CreateAnIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:07</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = CriandoUmBugSumarioEmBranco									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>METHOD: </b>POST</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>JSON BODY: </b>
+{
+  "summary": "",
+  "description": "Description for sample REST issue.",
+  "additional_information": "More info about the issue",
+  "project": {
+    "id": "1213",
+    "name": "CriandoUmBugSumarioEmBranco"
+  },
+  "category": {
+    "id": 5,
+    "name": "bugtracker"
+  },
+  "handler": {
+    "name": "vboctor"
+  },
+  "view_state": {
+    "id": 10,
+    "name": "public"
+  },
+  "priority": {
+    "name": "normal"
+  },
+  "severity": {
+    "name": "trivial"
+  },
+  "reproducibility": {
+    "name": "always"
+  },
+  "sticky": false,
+  "custom_fields": [
+    {
+      "field": {
+        "id": 4,
+        "name": ""
+      },
+      "value": "Seattle"
+    }
+  ],
+  "tags": [
+    {
+      "name": "mantishub"
+    }
+  ]
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:07 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=40d4b22b2e62e4016fa1c9c8ea9e6937; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=128
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Summary not specified",
+    "code": 11,
+    "localized": "A necessary field \"summary\" was empty. Please recheck your inputs."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+ConsultaBugDB || PARAMETERS: ID do projeto = 1213 Resumo =									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1213									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.DeleteAnIssueNoteTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeletandoNotaBug</p> 
+													<p class="duration text-sm">0h:0m:0s+456ms</p> 
+													<span class="datetime">20:38:08 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeletandoNotaBug</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:08</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:08</span>
+															<span class='badge badge-default'>0h:0m:0s+456ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.DeleteAnIssueNoteTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = DeletandoNotaBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+InseriBugDB || PARAMETERS: ID do projeto = 1214 Resumo = DeletandoNotaBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+InserirNotaBugDB || PARAMETERS: ID do bug = 387 Descrição da nota = DeletandoNotaBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/387/notes/121</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>STATUS CODE: </b>200 - OK</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:08 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=199651a4692b10998c7a3f4cf4d387e8; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=850
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "issue": {
+        "id": 387,
+        "summary": "DeletandoNotaBug",
+        "description": "Description for sample REST issue.",
+        "steps_to_reproduce": "teste",
+        "additional_information": "More info about the issue",
+        "project": {
+            "id": 1214,
+            "name": "DeletandoNotaBug"
+        },
+        "category": {
+            "id": 1,
+            "name": "General"
+        },
+        "reporter": {
+            "id": 0
+        },
+        "status": {
+            "id": 10,
+            "name": "new",
+            "label": "new",
+            "color": "#fcbdbd"
+        },
+        "resolution": {
+            "id": 10,
+            "name": "open",
+            "label": "open"
+        },
+        "view_state": {
+            "id": 10,
+            "name": "public",
+            "label": "public"
+        },
+        "priority": {
+            "id": 30,
+            "name": "normal",
+            "label": "normal"
+        },
+        "severity": {
+            "id": 50,
+            "name": "minor",
+            "label": "minor"
+        },
+        "reproducibility": {
+            "id": 10,
+            "name": "always",
+            "label": "always"
+        },
+        "sticky": false,
+        "history": [
+            {
+                "created_at": "2020-11-24T07:38:08+08:00",
+                "user": {
+                    "id": 1,
+                    "name": "administrator",
+                    "email": "root@localhost"
+                },
+                "type": {
+                    "id": 4,
+                    "name": "note-deleted"
+                },
+                "note": {
+                    "id": 121
+                },
+                "message": "Note Deleted: 0000121"
+            }
+        ]
+    }
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+ConsultaNotaBugDB || PARAMETERS: ID do bug = 387 Descrição da nota = DeletandoNotaBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1214									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+DeletaBugDB || PARAMETERS: ID do bug = 387									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+DeletaTextoBugDB || PARAMETERS: ID do bug = 387									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+DeletaTextoNotaBugDB || PARAMETERS: ID da nota = 121 Descrição da nota = DeletandoNotaBug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+DeletaHistoricoBugDB || PARAMETERS: ID do bug = 387									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.DeleteAnIssueNoteTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeletandoNotaBugIdNotaInexistente</p> 
+													<p class="duration text-sm">0h:0m:0s+377ms</p> 
+													<span class="datetime">20:38:08 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeletandoNotaBugIdNotaInexistente</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:08</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:09</span>
+															<span class='badge badge-default'>0h:0m:0s+377ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.DeleteAnIssueNoteTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = DeletandoNotaBugIdNotaInexistente									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+InseriBugDB || PARAMETERS: ID do projeto = 1215 Resumo = DeletandoNotaBugIdNotaInexistente									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/388/notes/99999</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:08 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=d35b234381d8fc5584815c6987d3df98; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=82
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:08</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Issue note #99999 not found",
+    "code": 600,
+    "localized": "Note not found."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:08</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1215									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaBugDB || PARAMETERS: ID do bug = 388									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaTextoBugDB || PARAMETERS: ID do bug = 388									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.DeleteAnIssueNoteTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeletandoNotaBugIdNotaInvalido</p> 
+													<p class="duration text-sm">0h:0m:0s+439ms</p> 
+													<span class="datetime">20:38:09 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeletandoNotaBugIdNotaInvalido</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:09</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:09</span>
+															<span class='badge badge-default'>0h:0m:0s+439ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.DeleteAnIssueNoteTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = DeletandoNotaBugIdNotaInvalido									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+InseriBugDB || PARAMETERS: ID do projeto = 1216 Resumo = DeletandoNotaBugIdNotaInvalido									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/389/notes/teste</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:09 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=06fbf998149f3b789a3c8bc0be7763dc; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=78
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "'id' must be >= 1",
+    "code": 29,
+    "localized": "Invalid value for 'id'"
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1216									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaBugDB || PARAMETERS: ID do bug = 389									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaTextoBugDB || PARAMETERS: ID do bug = 389									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.DeleteAnIssueNoteTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeletandoNotaIdBugIncorreto</p> 
+													<p class="duration text-sm">0h:0m:0s+477ms</p> 
+													<span class="datetime">20:38:09 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeletandoNotaIdBugIncorreto</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:09</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:09</span>
+															<span class='badge badge-default'>0h:0m:0s+477ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.DeleteAnIssueNoteTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = DeletandoNotaBugIdNotaIncorreto									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+InseriBugDB || PARAMETERS: ID do projeto = 1217 Resumo = DeletandoNotaBugIdNotaIncorreto									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+InserirNotaBugDB || PARAMETERS: ID do bug = 390 Descrição da nota = DeletandoNotaIdBugIncorreto									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/999999/notes/122</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF
+<i>Content-Type</i> = application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>STATUS CODE: </b>400 - BadRequest</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:09 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=b49939b5a70455208030a898baa98576; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Connection=close
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=95
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:09</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Issue note doesn't belong to issue",
+    "code": 29,
+    "localized": "Invalid value for 'id'"
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+ConsultaNotaBugDB || PARAMETERS: ID do bug = 390 Descrição da nota = DeletandoNotaIdBugIncorreto									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1217									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaBugDB || PARAMETERS: ID do bug = 390									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaTextoBugDB || PARAMETERS: ID do bug = 390									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaTextoNotaBugDB || PARAMETERS: ID da nota = 122 Descrição da nota = DeletandoNotaIdBugIncorreto									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+DeletaNotaBugDB || PARAMETERS: ID do bug = 390 ID da nota bug = 122									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.DeleteAnIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeletandoUmBug</p> 
+													<p class="duration text-sm">0h:0m:0s+283ms</p> 
+													<span class="datetime">20:38:09 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeletandoUmBug</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:09</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:10</span>
+															<span class='badge badge-default'>0h:0m:0s+283ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.DeleteAnIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = DeletandoUmbug									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:09</td>
+				<td>
+InseriBugDB || PARAMETERS: ID do projeto = 1218 Resumo = DeletandoUmbugComSucesso									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/391</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>STATUS CODE: </b>204 - NoContent</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:10 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=ceee32212d0b062bae5b5eb00af7bd27; path=/; HttpOnly
+Cache-Control=no-store, must-revalidate, no-cache, max-age=0
+ETag=2a02335bfe48c00df1f4a123c3a1da1a1090faafe82cfb964a64c518292d276a
+X-Mantis-Username=administrator
+X-Mantis-LoginMethod=api-token
+X-Mantis-Version=2.22.1
+Vary=Accept-Encoding
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+ConsultaBugDB || PARAMETERS: ID do projeto = 1218 Resumo = DeletandoUmbugComSucesso									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1218									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.DeleteAnIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeletandoUmBugIdInexistente</p> 
+													<p class="duration text-sm">0h:0m:0s+220ms</p> 
+													<span class="datetime">20:38:10 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeletandoUmBugIdInexistente</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:10</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:10</span>
+															<span class='badge badge-default'>0h:0m:0s+220ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.DeleteAnIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/99999</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:10 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=2c18cb00387d9179161d7b46e4d13fbe; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=85
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Issue #99999 not found",
+    "code": 1100,
+    "localized": "Issue 99999 not found."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+										<li class="test-item" status="pass" author="" device="" tag="Issues.DeleteAnIssueTests"> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
+											</div>
+											<div class="open-test">
+												<div class="test-detail"> 
+													<p class="name">DeletandoUmBugProjetoNaoExisteMais</p> 
+													<p class="duration text-sm">0h:0m:0s+332ms</p> 
+													<span class="datetime">20:38:10 </span>
+												</div>
+											</div>
+											<div class="test-contents d-none">
+												<div class="detail-head">
+													<div class="p-v-10 d-inline-block">	
+														<div class="info">
+															<h5 class="test-status text-pass">DeletandoUmBugProjetoNaoExisteMais</h5>
+															<span class='badge badge-success'>23/11/2020 20:38:10</span>
+															<span class='badge badge-danger'>23/11/2020 20:38:10</span>
+															<span class='badge badge-default'>0h:0m:0s+332ms</span>
+														</div>
+														<div class="m-t-15">
+		                                        				<div class="attributes">
+						<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Issues.DeleteAnIssueTests</span> 	
+			</div>
+
+														</div>
+																											</div>
+												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+InseriProjetoDB || PARAMETERS: Nome do projeto = DeletandoUmBugProjetoNaoExisteMais									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+InseriBugDB || PARAMETERS: ID do projeto = 1219 Resumo = DeletandoUmBugProjetoNaoExisteMais									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+DeletaProjetoDB || PARAMETERS: ID do projeto = 1219									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>URL: </b>http://192.168.99.100:8989</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>REQUEST: </b>/api/rest/issues/392</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>METHOD: </b>DELETE</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>HEADERS: </b>
+<i>Authorization</i> = 4VBZ9TzY3RgaGYK7O0z0wxxMCo_u88TF</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>STATUS CODE: </b>404 - NotFound</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>RESPONSE HEADERS: </b>
+Date=Mon, 23 Nov 2020 23:38:10 GMT
+Server=Apache/2.4.25, (Debian)
+X-Powered-By=PHP/5.6.40
+Set-Cookie=PHPSESSID=a56f0394bf96ba85b241fac71ee5469a; path=/; HttpOnly
+Cache-Control=max-age=10800, private, pre-check=10800
+Keep-Alive=timeout=5, max=100
+Connection=Keep-Alive
+Last-Modified=Thu, 26 Sep 2019 16:45:58 GMT
+Content-Length=90
+Content-Type=application/json</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>20:38:10</td>
+				<td>
+<pre><b>PAYLOAD: </b>
+{
+    "message": "Project #1219 not found",
+    "code": 700,
+    "localized": "Project \"1219\" not found."
+}</pre>									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+DeletaBugDB || PARAMETERS: ID do bug = 392									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+DeletaTextoBugDB || PARAMETERS: ID do bug = 392									</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>20:38:10</td>
+				<td>
+Test Result: Pass									</td>
+			</tr>
+	</tbody>
+</table>
+
+</div>    
+											</div>
+										</li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="test-content scrollable">
+                            <div class="test-content-tools">
+                                <ul>
+                                    <li>
+                                        <a class="back-to-test" href="javascript:void(0)">
+                                            <i class="fa fa-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test-content-detail">
+                                <div class="detail-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script type='text/javascript'>
+	
+</script>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/f97b667/spark/js/script.js"></script>
+
+</body>
+
+</html>

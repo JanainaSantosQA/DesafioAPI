@@ -1,6 +1,8 @@
 ﻿using NUnit.Framework;
 using AutomacaoApiMantis.Helpers;
 
+[assembly: LevelOfParallelism(2)]
+
 namespace AutomacaoApiMantis.Bases
 {
     public class TestBase

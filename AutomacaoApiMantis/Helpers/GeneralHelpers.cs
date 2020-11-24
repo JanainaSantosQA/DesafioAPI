@@ -121,6 +121,37 @@ namespace AutomacaoApiMantis.Helpers
                 return false;
             }
         }
+
+        public static void ValidaStatusCodeComComandoNodeJS(string statusCodeExpected, string statusCodeReturned)
+        {      
+            string caminhoArquivo = GeneralHelpers.ReturnProjectPath() + "Resources\\ValidaStatusCodeJS.js";            
+
+            var linhas = File.ReadAllLines(caminhoArquivo);
+
+            linhas[2] = "var statusCodeExpected = \"" + statusCodeExpected + "\";";
+            linhas[3] = "var statusCodeReturned = \"" + statusCodeReturned + "\";";
+
+            File.WriteAllLines(caminhoArquivo, linhas);
+
+            ProcessStartInfo start = new ProcessStartInfo();
+            start.FileName = @"C:\Program Files\nodejs\node.exe";
+            start.Arguments = caminhoArquivo;
+            start.UseShellExecute = false;
+            start.RedirectStandardOutput = true;
+            using (Process process = Process.Start(start))
+            {
+                using (StreamReader reader = process.StandardOutput)
+                {
+                    string result = reader.ReadToEnd();
+
+                    if (!result.Contains("true"))
+                    {
+                        throw new Exception("Status Code esperado: " + statusCodeExpected + " Status Code retornado: " + statusCodeReturned);
+                    }
+                }
+
+            }
+        }
     }
 
     static class Extensions
