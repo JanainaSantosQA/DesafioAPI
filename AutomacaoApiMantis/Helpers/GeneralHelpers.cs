@@ -123,8 +123,8 @@ namespace AutomacaoApiMantis.Helpers
         }
 
         public static void ValidaStatusCodeComComandoNodeJS(string statusCodeExpected, string statusCodeReturned)
-        {      
-            string caminhoArquivo = GeneralHelpers.ReturnProjectPath() + "Resources\\ValidaStatusCodeJS.js";            
+        {
+            string caminhoArquivo = GeneralHelpers.ReturnProjectPath() + "Resources\\ValidaStatusCodeJS.js";
 
             var linhas = File.ReadAllLines(caminhoArquivo);
 
@@ -161,6 +161,45 @@ namespace AutomacaoApiMantis.Helpers
             foreach (var i in ie)
             {
                 action(i);
+            }
+        }
+    }
+
+    public class Global
+    {
+        public static string dbUrl;
+        public static string dbPort;
+        public static string dbName;
+        public static string dbUser;
+        public static string dbPassword;
+
+        public static string url;
+        public static string token;
+
+        public void Initializer()
+        {
+            if (JsonBuilder.ReturnParameterAppSettings("ENVIROMENT") == "QA" || JsonBuilder.ReturnParameterAppSettings("ENVIROMENT") == "qa")
+            {
+
+                dbUrl = JsonBuilder.ReturnParameterAppSettings("DB_URL_QA");
+                dbPort = JsonBuilder.ReturnParameterAppSettings("DB_PORT_QA");
+                dbName = JsonBuilder.ReturnParameterAppSettings("DB_NAME_QA");
+                dbUser = JsonBuilder.ReturnParameterAppSettings("DB_USER_QA");
+                dbPassword = JsonBuilder.ReturnParameterAppSettings("DB_PASSWORD_QA");
+
+                url = JsonBuilder.ReturnParameterAppSettings("URL_QA");
+                token = JsonBuilder.ReturnParameterAppSettings("TOKEN_QA");
+            }
+            else
+            {
+                dbUrl = JsonBuilder.ReturnParameterAppSettings("DB_URL_HML");
+                dbPort = JsonBuilder.ReturnParameterAppSettings("DB_PORT_HML");
+                dbName = JsonBuilder.ReturnParameterAppSettings("DB_NAME_HML");
+                dbUser = JsonBuilder.ReturnParameterAppSettings("DB_USER_HML");
+                dbPassword = JsonBuilder.ReturnParameterAppSettings("DB_PASSWORD_HML");
+
+                url = JsonBuilder.ReturnParameterAppSettings("URL_HML");
+                token = JsonBuilder.ReturnParameterAppSettings("TOKEN_HML");
             }
         }
     }

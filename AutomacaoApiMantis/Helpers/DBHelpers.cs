@@ -9,13 +9,27 @@ namespace AutomacaoApiMantis.Helpers
 {
     public class DBHelpers
     {
-        public static MySqlConnection GetDBConnection()
+        public static MySqlConnection GetDBConnectionBKP()
         {
             string connectionString = "Server=" + JsonBuilder.ReturnParameterAppSettings("DB_URL") + ";" +
                                       "Port=" + JsonBuilder.ReturnParameterAppSettings("DB_PORT") + ";" +
                                       "Database=" + JsonBuilder.ReturnParameterAppSettings("DB_NAME") + ";" +
                                       "UID=" + JsonBuilder.ReturnParameterAppSettings("DB_USER") + ";" +
                                       "Password=" + JsonBuilder.ReturnParameterAppSettings("DB_PASSWORD") + ";" +
+                                      "Allow User Variables=True" + ";" +
+                                      "SslMode=" + JsonBuilder.ReturnParameterAppSettings("DB_SSLMODE");
+
+            MySqlConnection connection = new MySqlConnection(connectionString);
+
+            return connection;
+        }
+        public static MySqlConnection GetDBConnection()
+        {
+            string connectionString = "Server=" + Global.dbUrl + ";" +
+                                      "Port=" + Global.dbPort + ";" +
+                                      "Database=" + Global.dbName + ";" +
+                                      "UID=" + Global.dbUser + ";" +
+                                      "Password=" + Global.dbPassword + ";" +
                                       "Allow User Variables=True" + ";" +
                                       "SslMode=" + JsonBuilder.ReturnParameterAppSettings("DB_SSLMODE");
 
@@ -32,7 +46,7 @@ namespace AutomacaoApiMantis.Helpers
                 cmd.ExecuteNonQuery();
                 cmd.Connection.Close();
             }
-        }
+        }    
         public static List<T> ObtemLista<T>(string query)
         {
             IEnumerable<T> retorno = null;

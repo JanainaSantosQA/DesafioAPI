@@ -9,7 +9,7 @@ namespace AutomacaoApiMantis.Bases
         #region Parameters
         protected string jsonBody = null;
 
-        protected string url = JsonBuilder.ReturnParameterAppSettings("URL");
+        protected string url = Global.url;
 
         protected string requestService = null;
 
@@ -22,8 +22,7 @@ namespace AutomacaoApiMantis.Bases
         protected IDictionary<string, string> headers = new Dictionary<string, string>()
         {
             //Dicionário de headeres deve ser iniciado com os headers comuns a todos os métodos da API
-            {"Authorization", JsonBuilder.ReturnParameterAppSettings("TOKEN")},
-
+             {"Authorization", Global.token},
         };
 
         protected IDictionary<string, string> cookies = new Dictionary<string, string>()

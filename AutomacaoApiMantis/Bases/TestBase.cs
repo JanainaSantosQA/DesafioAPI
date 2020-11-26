@@ -10,6 +10,7 @@ namespace AutomacaoApiMantis.Bases
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
+            new Global().Initializer();
             ExtentReportHelpers.CreateReport();
         }
 
@@ -22,7 +23,7 @@ namespace AutomacaoApiMantis.Bases
         [TearDown]
         public void TearDown()
         {
-            ExtentReportHelpers.AddTestResult();
+            ExtentReportHelpers.AddTestResult();         
         }
 
         [OneTimeTearDown]
