@@ -36,5 +36,15 @@ namespace AutomacaoApiMantis.DBSteps.Users
 
             DBHelpers.ExecuteQuery(query);
         }
+
+        public void DeletaEmailUsuarioDB(string userEmail)
+        {
+            string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/Users/deletaEmailUsuario.sql", Encoding.UTF8);
+            query = query.Replace("$userEmail", userEmail);
+
+            ExtentReportHelpers.AddTestInfo(2, "PARAMETERS: E-mail do usuário = " + userEmail);
+
+            DBHelpers.ExecuteQuery(query);
+        }
     }
 }

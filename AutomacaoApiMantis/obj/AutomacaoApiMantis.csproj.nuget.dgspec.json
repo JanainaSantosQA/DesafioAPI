@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoApiMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj": {}
+    "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoAPIMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoApiMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj": {
+    "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoAPIMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoApiMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj",
+        "projectUniqueName": "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoAPIMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj",
         "projectName": "AutomacaoApiMantis",
-        "projectPath": "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoApiMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj",
+        "projectPath": "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoAPIMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj",
         "packagesPath": "C:\\Users\\Janaina\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoApiMantis\\AutomacaoApiMantis\\obj\\",
+        "outputPath": "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoAPIMantis\\AutomacaoApiMantis\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

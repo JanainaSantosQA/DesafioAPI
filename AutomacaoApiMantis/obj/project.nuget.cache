@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nkSR7D0MPt3k7mVGV4Ew/pZgOzGk1KSmIjXfbhYpdvR9MLcv8kkE4MJ+JmTc3Cg4N2InTH3JaifI7Ing2kJ5IQ==",
+  "dgSpecHash": "3HmOKLjTo5c8ljiaQ05/HJX8vPMEwiCXvpXCt2HIBxZERULUK+ImsrrfgEP5RtH74eVJ8W7hr7k5dr43AhNB/w==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoApiMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj",
+  "projectFilePath": "D:\\Projetos\\VS2019\\DesafioAPI\\AutomacaoAPIMantis\\AutomacaoApiMantis\\AutomacaoApiMantis.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Janaina\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Janaina\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",

@@ -176,6 +176,9 @@ namespace AutomacaoApiMantis.Helpers
         public static string url;
         public static string token;
 
+        public static string authenticatorUser;
+        public static string authenticatorPassword;
+
         public void Initializer()
         {
             if (JsonBuilder.ReturnParameterAppSettings("ENVIROMENT") == "QA" || JsonBuilder.ReturnParameterAppSettings("ENVIROMENT") == "qa")
@@ -189,6 +192,9 @@ namespace AutomacaoApiMantis.Helpers
 
                 url = JsonBuilder.ReturnParameterAppSettings("URL_QA");
                 token = JsonBuilder.ReturnParameterAppSettings("TOKEN_QA");
+
+                authenticatorUser = JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_USER_QA");
+                authenticatorPassword = JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_PASSWORD_QA");
             }
             else
             {
@@ -200,6 +206,9 @@ namespace AutomacaoApiMantis.Helpers
 
                 url = JsonBuilder.ReturnParameterAppSettings("URL_HML");
                 token = JsonBuilder.ReturnParameterAppSettings("TOKEN_HML");
+
+                authenticatorUser = JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_USER_HML");
+                authenticatorPassword = JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_PASSWORD_HML");
             }
         }
     }

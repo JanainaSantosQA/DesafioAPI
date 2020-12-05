@@ -89,5 +89,14 @@ namespace AutomacaoApiMantis.DBSteps.Issues
 
             DBHelpers.ExecuteQuery(query);
         }
+        public void DeletaTagBugDB(int bugId)
+        {
+            string query = File.ReadAllText(GeneralHelpers.ReturnProjectPath() + "Queries/Issues/deletaBugTag.sql", Encoding.UTF8);
+            query = query.Replace("$bugId", bugId.ToString());
+
+            ExtentReportHelpers.AddTestInfo(2, "PARAMETERS: ID do bug = " + bugId);
+
+            DBHelpers.ExecuteQuery(query);
+        }
     }
 }

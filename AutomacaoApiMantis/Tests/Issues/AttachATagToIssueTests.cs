@@ -52,6 +52,7 @@ namespace AutomacaoApiMantis.Tests.Issues
             issuesDBSteps.DeletaTextoBugDB(bugCriadoDB.BugId);
             issuesDBSteps.DeletaTextoNotaBugDB(consultaNotaBugDB[0], noteText);
             issuesDBSteps.DeletaNotaBugDB(bugCriadoDB.BugId, consultaNotaBugDB[0]);
+            issuesDBSteps.DeletaHistoricoBugDB(bugCriadoDB.BugId);
         }
 
         [Test]

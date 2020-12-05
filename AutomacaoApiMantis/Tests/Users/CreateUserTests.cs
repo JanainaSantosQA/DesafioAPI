@@ -40,6 +40,7 @@ namespace AutomacaoApiMantis.Tests.Users
             });
 
             usersDBSteps.DeletaUsuarioDB(consultaUsuarioDB.UserId);
+            usersDBSteps.DeletaEmailUsuarioDB(email);
         }
 
         [Test]

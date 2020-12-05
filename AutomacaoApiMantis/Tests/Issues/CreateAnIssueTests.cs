@@ -39,6 +39,9 @@ namespace AutomacaoApiMantis.Tests.Issues
 
             projectsDBSteps.DeletaProjetoDB(projetoCriadoDB.ProjectId);
             issuesDBSteps.DeletaBugDB(bugRegistradoDB.BugId);
+            issuesDBSteps.DeletaTextoBugDB(bugRegistradoDB.BugId);
+            issuesDBSteps.DeletaTagBugDB(bugRegistradoDB.BugId);
+            issuesDBSteps.DeletaHistoricoBugDB(bugRegistradoDB.BugId);
         }
 
         [Test]

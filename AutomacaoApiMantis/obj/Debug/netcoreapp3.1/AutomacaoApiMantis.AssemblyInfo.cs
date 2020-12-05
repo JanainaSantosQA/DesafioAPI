@@ -7,8 +7,8 @@
 //     o código for gerado novamente.
 // </auto-generated>
 //------------------------------------------------------------------------------
-
 using System;
+using NUnit.Framework;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutomacaoApiMantis")]
@@ -18,6 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("AutomacaoApiMantis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutomacaoApiMantis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: LevelOfParallelism(2)]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

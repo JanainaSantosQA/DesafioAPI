@@ -62,12 +62,12 @@ namespace AutomacaoApiMantis.Helpers
 
             if (httpBasicAuthenticator)
             {
-                client.Authenticator = new HttpBasicAuthenticator(JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_USER"), JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_PASSWORD"));
+                client.Authenticator = new HttpBasicAuthenticator(Global.authenticatorUser, Global.authenticatorPassword);
             }
 
             if (ntlmAuthenticator)
             {
-                client.Authenticator = new NtlmAuthenticator(JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_USER"), JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_PASSWORD"));
+                client.Authenticator = new NtlmAuthenticator(Global.authenticatorUser, Global.authenticatorPassword);
             }
 
             client.AddHandler("application/json", new JsonDeserializer());
@@ -114,12 +114,12 @@ namespace AutomacaoApiMantis.Helpers
 
             if (httpBasicAuthenticator)
             {
-                client.Authenticator = new HttpBasicAuthenticator(JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_USER"), JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_PASSWORD"));
+                client.Authenticator = new HttpBasicAuthenticator(Global.authenticatorUser, Global.authenticatorPassword);
             }
 
             if (ntlmAuthenticator)
             {
-                client.Authenticator = new NtlmAuthenticator(JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_USER"), JsonBuilder.ReturnParameterAppSettings("AUTHENTICATOR_PASSWORD"));
+                client.Authenticator = new NtlmAuthenticator(Global.authenticatorUser, Global.authenticatorPassword);
             }
 
             return client.Execute<dynamic>(request);
