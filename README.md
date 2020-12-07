@@ -14,7 +14,7 @@ UpdateSubProjectTests, CreateUserTests, DeleteUserTests e GetMyUserInfoTests.
 2) Alguns scripts devem ler dados de uma planilha Excel para implementar Data-Driven. Item implementado na classe: CreateUserTests
 3) Notem que 50 scripts podem cobrir mais de 50 casos de testes se usarmos Data-Driven. Em outras palavras, implementar 50 CTs usando data-driven não é a 
 mesma coisa que implementar 50 scripts.
-4) O projeto deve tratar autenticação. Exemplo: OAuth2. 3. As chamadas da API REST do Mantis devem ser autenticadas. 
+4) O projeto deve tratar autenticação. Exemplo: OAuth2. As chamadas da API REST do Mantis devem ser autenticadas. 
 Para criar o Token acessei a aplicação do Mantis com o usuário criado depois fui no: "Menu com nome do usuário logado > Minha Conta > Tokens API > Informe o "Nome do Token" > Clique no botão "Criar Token API" "
 Depois do token gerado ele foi utizado no header "Authorization".
 5) Pelo menos um teste deve fazer a validação usando REGEX (Expressões Regulares): implementado nas classes: AddAnIssueRelatiobshipTests, AttachATagToIssueTests,
@@ -23,7 +23,7 @@ CreateAnIssueTests, DeleteAnIssueNoteTests, DeleteAnIssueTests e DeleteUserTests
 Exemplos: para reutilizar um passo de outro teste, para calcular o CPF, iterar em uma lista de valores retornados em uma chamada, fazer asserts.
 Foi implementado um código em JS na classe DeleteAnIssueNoteTests para validar o status code retornado.
 7) O projeto deverá gerar um relatório de testes automaticamente: foi o utilizado o framework ExtentReports.
-8) Implementar pelo menos dois ambientes (desenvolvimento / homologação): item implementado na classe: GeneralHelpers.
+8) Implementar pelo menos dois ambientes (desenvolvimento / homologação). Item implementado na classe: GeneralHelpers.
 9) A massa de testes deve ser preparada neste projeto, seja com scripts carregando massa nova no BD ou com restore de banco de dados. Se usar <a href="http://wiremock.org/">WireMock</a> a massa será tratada implicitamente. 
 10) Executar testes em paralelo. Pelo menos duas threads (25 testes cada): foi utilizado o atributo assembly-level para especificar o nível de paralelismo. 
 Implementado na classe: "AutomacaoApiMantis.AssemblyInfo.cs".
