@@ -1,6 +1,6 @@
-Automação: Mantis Bug Tracker REST API
+<b>Automação: Mantis Bug Tracker REST API</b>
 
-Documentação oficial da API: https://documenter.getpostman.com/view/29959/mantis-bug-tracker-rest-api/7Lt6zkP?version=latest#b09a8b9d-5466-48f7-89dc-4be7414d7059
+<a href="https://documenter.getpostman.com/view/29959/mantis-bug-tracker-rest-api/7Lt6zkP">Documentação oficial da API</a>
 
 Projeto desenvolvido em C# - VS2019.
 
