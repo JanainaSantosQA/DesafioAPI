@@ -11,7 +11,7 @@ Projeto desenvolvido em C# - VS2019.
 Foram criados 53 scripts de testes distribuídos nas classes: DeleteAFilterTests, GetAFilterTests, AddAnIssueRelatiobshipTests, AttachATagToIssueTests, CreateAnIssueTests,
 DeleteAnIssueNoteTests, DeleteAnIssueTests, AddSubProjectTests, CreateProjectTests, CreateProjectVersionTests, DeleteProjectTests, GetProjectTests, UpdateProjectTests,
 UpdateSubProjectTests, CreateUserTests, DeleteUserTests e GetMyUserInfoTests.
-2) Alguns scripts devem ler dados de uma planilha Excel para implementar Data-Driven: item implementado na classe: CreateUserTests
+2) Alguns scripts devem ler dados de uma planilha Excel para implementar Data-Driven. Item implementado na classe: CreateUserTests
 3) Notem que 50 scripts podem cobrir mais de 50 casos de testes se usarmos Data-Driven. Em outras palavras, implementar 50 CTs usando data-driven não é a 
 mesma coisa que implementar 50 scripts.
 4) O projeto deve tratar autenticação. Exemplo: OAuth2. 3. As chamadas da API REST do Mantis devem ser autenticadas. 
