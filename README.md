@@ -7,7 +7,7 @@ Projeto desenvolvido em C# - VS2019.
 
 <b>Metas do projeto:</b>
 
-1)Implementar 50 scripts de testes que manipulem uma aplicação cuja interface é uma API REST. 
+1) Implementar 50 scripts de testes que manipulem uma aplicação cuja interface é uma API REST. 
 Foram criados 53 scripts de testes distribuídos nas classes: DeleteAFilterTests, GetAFilterTests, AddAnIssueRelatiobshipTests, AttachATagToIssueTests, CreateAnIssueTests,
 DeleteAnIssueNoteTests, DeleteAnIssueTests, AddSubProjectTests, CreateProjectTests, CreateProjectVersionTests, DeleteProjectTests, GetProjectTests, UpdateProjectTests,
 UpdateSubProjectTests, CreateUserTests, DeleteUserTests e GetMyUserInfoTests.
@@ -24,11 +24,10 @@ Exemplos: para reutilizar um passo de outro teste, para calcular o CPF, iterar e
 Foi implementado um código em JS na classe DeleteAnIssueNoteTests para validar o status code retornado.
 7) O projeto deverá gerar um relatório de testes automaticamente: foi o utilizado o framework ExtentReports.
 8) Implementar pelo menos dois ambientes (desenvolvimento / homologação): item implementado na classe: GeneralHelpers.
-9) A massa de testes deve ser preparada neste projeto, seja com scripts carregando massa nova no BD ou com restore de banco de dados. Se usar WireMock 
-( http://wiremock.org/ ) a massa será tratada implicitamente. 
+9) A massa de testes deve ser preparada neste projeto, seja com scripts carregando massa nova no BD ou com restore de banco de dados. Se usar <a href="http://wiremock.org/">WireMock</a> a massa será tratada implicitamente. 
 10) Executar testes em paralelo. Pelo menos duas threads (25 testes cada): foi utilizado o atributo assembly-level para especificar o nível de paralelismo. 
 Implementado na classe: "AutomacaoApiMantis.AssemblyInfo.cs".
 11) Testes deverão ser agendados pelo Jenkins, CircleCI, TFS ou outra ferramenta de CI que preferir: foi utilizado o Azure DevOps.
 O arquivo com a configuração realizada se encontra no repositório, caminho: AutomacaoApiMantis\AutomacaoApiMantis\Resources\Configuracao_Azure_Devops.pdf
-Link com a execução no Azure DevOps:
-https://dev.azure.com/janainasantos033/DesafioAPI/_build/results?buildId=28&view=results
+<a href="https://dev.azure.com/janainasantos033/DesafioAPI/_build/results?buildId=28&view=results">Link com a execução no Azure DevOps<a/>
+
