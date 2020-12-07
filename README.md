@@ -29,5 +29,6 @@ Foi implementado um código em JS na classe DeleteAnIssueNoteTests para validar 
 Implementado na classe: "AutomacaoApiMantis.AssemblyInfo.cs".
 11) Testes deverão ser agendados pelo Jenkins, CircleCI, TFS ou outra ferramenta de CI que preferir: foi utilizado o Azure DevOps.
 O arquivo com a configuração realizada se encontra no repositório, caminho: AutomacaoApiMantis\AutomacaoApiMantis\Resources\Configuracao_Azure_Devops.pdf
+
 <a href="https://dev.azure.com/janainasantos033/DesafioAPI/_build/results?buildId=28&view=results">Link com a execução no Azure DevOps<a/>
 
