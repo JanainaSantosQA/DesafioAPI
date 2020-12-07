@@ -8,21 +8,7 @@ using System.Collections.Generic;
 namespace AutomacaoApiMantis.Helpers
 {
     public class DBHelpers
-    {
-        public static MySqlConnection GetDBConnectionBKP()
-        {
-            string connectionString = "Server=" + JsonBuilder.ReturnParameterAppSettings("DB_URL") + ";" +
-                                      "Port=" + JsonBuilder.ReturnParameterAppSettings("DB_PORT") + ";" +
-                                      "Database=" + JsonBuilder.ReturnParameterAppSettings("DB_NAME") + ";" +
-                                      "UID=" + JsonBuilder.ReturnParameterAppSettings("DB_USER") + ";" +
-                                      "Password=" + JsonBuilder.ReturnParameterAppSettings("DB_PASSWORD") + ";" +
-                                      "Allow User Variables=True" + ";" +
-                                      "SslMode=" + JsonBuilder.ReturnParameterAppSettings("DB_SSLMODE");
-
-            MySqlConnection connection = new MySqlConnection(connectionString);
-
-            return connection;
-        }
+    { 
         public static MySqlConnection GetDBConnection()
         {
             string connectionString = "Server=" + Global.dbUrl + ";" +
