@@ -6,10 +6,11 @@ Projeto desenvolvido em C# - VS2019.
 
 
 <b>Metas do projeto:</b>
+
 1)Implementar 50 scripts de testes que manipulem uma aplicação cuja interface é uma API REST. 
 Foram criados 53 scripts de testes distribuídos nas classes: DeleteAFilterTests, GetAFilterTests, AddAnIssueRelatiobshipTests, AttachATagToIssueTests, CreateAnIssueTests,
 DeleteAnIssueNoteTests, DeleteAnIssueTests, AddSubProjectTests, CreateProjectTests, CreateProjectVersionTests, DeleteProjectTests, GetProjectTests, UpdateProjectTests,
-UpdateSubProjectTests, CreateUserTests, DeleteUserTests e GetMyUserInfoTests.</li>
+UpdateSubProjectTests, CreateUserTests, DeleteUserTests e GetMyUserInfoTests.
 2) Alguns scripts devem ler dados de uma planilha Excel para implementar Data-Driven: item implementado na classe: CreateUserTests
 3) Notem que 50 scripts podem cobrir mais de 50 casos de testes se usarmos Data-Driven. Em outras palavras, implementar 50 CTs usando data-driven não é a 
 mesma coisa que implementar 50 scripts.
